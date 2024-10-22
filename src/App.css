@@ -1,0 +1,43 @@
+/* App.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem; /* Larger font size for the title */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Default button color */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Scale down when clicked */
+  }
+  
+  div {
+    text-align: center; /* Center-align text in the inner div */
+  }
+  
