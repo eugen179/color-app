@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './App.css';
 
 const ColorSwitcher = () => {
   const [color, setColor] = useState('white');
