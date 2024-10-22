@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+
+const ColorSwitcher = () => {
+  const [color, setColor] = useState('white');
+
+  const changeColor = (newColor) => {
+    setColor(newColor);
+  };
+
+  return (
+    <div style={{ backgroundColor: color, height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div>
+        <h1>Color Switcher</h1>
+        <button onClick={() => changeColor('red')}>Red</button>
+        <button onClick={() => changeColor('blue')}>Blue</button>
+        <button onClick={() => changeColor('green')}>Green</button>
+        <button onClick={() => changeColor('yellow')}>Yellow</button>
+        <button onClick={() => changeColor('purple')}>Purple</button>
+        <button onClick={() => changeColor('black')}>Black</button>
+        <button onClick={() => changeColor('white')}>Reset</button>
+      </div>
+    </div>
+  );
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ColorSwitcher />
     </div>
   );
 }
